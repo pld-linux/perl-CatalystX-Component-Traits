@@ -8,13 +8,13 @@
 Summary:	CatalystX::Component::Traits - Automatic Trait Loading and Resolution for Catalyst Components
 Summary(pl.UTF-8):	CatalystX::Component::Traits - automatyczne ładowanie Trait oraz rozwiązywanie dla komponentów Catalyst
 Name:		perl-CatalystX-Component-Traits
-Version:	0.10
+Version:	0.14
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/R/RK/RKITOVER/CatalystX-Component-Traits-0.10.tar.gz
-# Source0-md5:	bf83abe598cae65a2efdf17e38cbced5
+Source0:	http://search.cpan.org/CPAN/authors/id/R/RK/RKITOVER/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	ebf80365de2e4557eef14f4cec0c3195
 URL:		http://search.cpan.org/dist/CatalystX-Component-Traits/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -23,20 +23,20 @@ BuildRequires:	perl(Moose::Autobox)
 BuildRequires:	perl(MooseX::Traits::Pluggable) >= 0.08
 BuildRequires:	perl-Catalyst >= 5.80005
 BuildRequires:	perl-List-MoreUtils
-BuildRequires:	perl-namespace-autoclean
 BuildRequires:	perl-Module-Pluggable >= 3.9
+BuildRequires:	perl-namespace-autoclean
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Adds a Catalyst::Component/COMPONENT method to your Catalyst component
-base class that reads the optional traits parameter from app and component
-config and instantiates the component subclass with those traits using
-MooseX::Traits/new_with_traits from MooseX::Traits::Pluggable.
+base class that reads the optional traits parameter from app and
+component config and instantiates the component subclass with those
+traits using MooseX::Traits/new_with_traits from
+MooseX::Traits::Pluggable.
 
-# %description -l pl.UTF-8
-# TODO
+# %description -l pl.UTF-8 # TODO
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
