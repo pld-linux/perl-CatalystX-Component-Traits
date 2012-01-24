@@ -8,13 +8,13 @@
 Summary:	CatalystX::Component::Traits - Automatic Trait Loading and Resolution for Catalyst Components
 Summary(pl.UTF-8):	CatalystX::Component::Traits - automatyczne ładowanie Trait oraz rozwiązywanie dla komponentów Catalyst
 Name:		perl-CatalystX-Component-Traits
-Version:	0.14
+Version:	0.16
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/R/RK/RKITOVER/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ebf80365de2e4557eef14f4cec0c3195
+Source0:	http://www.cpan.org/modules/by-module/CatalystX/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	7165156a9ebc786146c710d2939f9c06
 URL:		http://search.cpan.org/dist/CatalystX-Component-Traits/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
