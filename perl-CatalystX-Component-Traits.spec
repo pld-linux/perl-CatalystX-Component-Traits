@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	CatalystX
 %define	pnam	Component-Traits
 Summary:	CatalystX::Component::Traits - Automatic Trait Loading and Resolution for Catalyst Components
